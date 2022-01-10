@@ -29,7 +29,6 @@ func Token(ctx *gin.Context) {
 		fmt.Println(err.Error())
 	}
 	ctx.JSON(http.StatusOK, gin.H{"idToken": idToken})
-	fmt.Println(idToken)
 }
 
 const (
